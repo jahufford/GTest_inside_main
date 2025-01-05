@@ -34,8 +34,8 @@ FIXPATH = $(subst /,\,$1)
 RM			:= del /q /f
 MD	:= mkdir
 else
-MAIN	:= sim_8086
-TEST	:= TEST_sim_8086
+MAIN	:= project_executable
+TEST	:= TEST_project_executable
 SOURCEDIRS	:= $(shell find $(SRC) -type d)
 INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)
 LIBDIRS		:= $(shell find $(LIB) -type d) /usr/local/lib
